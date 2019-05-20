@@ -2,24 +2,110 @@ import emoji
 from twilio.rest import Client 
 from datetime import date
 
-
 today = date.today()
 month = int(str(today.month))
 
-account_sid = "AC9f70aceb6df3479af5b7c9c8bd4058cf"
-auth_token = "a22c7649bbb08d0779a6c71887bdaff5"
+account_sid = ""
+auth_token = ""
 client = Client(account_sid,auth_token)
 
-if month == 1: 
-	message = client.messages.create(
-		body = emoji.emojize("get :weary: ready for  JIZZ :sweat_drops: JAR :yum: JANUARY :cloud: ", use_aliases = True),
-		from_= '+17322904210' ,
-		to = '+17324237064'
-	)
+def main(): 
 
-elif month == 5: 
-	message = client.messages.create(
-		body = emoji.emojize(" it's MAY DAY you CUMMODITY fetishist :construction_worker::construction_worker: Most people :family: :couple:  are forced to work :computer: :phone: :hammer: for PROFIT :heavy_dollar_sign: :moneybag: :chart_with_upwards_trend: :chart_with_downwards_trend: :sweat: but I would work :computer: :phone: :hammer: for YOU :man_with_turban:  because YOU'RE MY CUM-RADE :droplet: :droplet: ", use_aliases = True),
-		from_ = '+17322904210' ,
-		to = '+17323221591'
-	)
+    while True
+    month = int(str(date.today().month))
+
+    if current_month != month 
+        current_month = month 
+        sendText(current_month) 
+
+
+def sendText(month): 
+
+    if month  == 1: 
+        message = client.messages.create(
+            body= emoji.emojize("happy new year :boom:", use_aliases = True),
+            from_='',
+            to=''
+        )
+
+    elif month  == 2: 
+        message = client.messages.create(
+            body= emoji.emojize("happy february! ", use_aliases = True),
+            from_='+Twilio Number',
+            to='+Your Phone Number'
+        )
+
+    elif month  == 3: 
+        message = client.messages.create(
+            body= emoji.emojize("happy march :clover:", use_aliases = True),
+            from_='',
+            to=''
+        )
+
+    elif month  == 4: 
+        message = client.messages.create(
+            body= emoji.emojize("happy april fools day! ::stuck_out_tongue_closed_eyes:", use_aliases = True),
+            from_='',
+            to=''
+        )
+
+    elif month  == 5: 
+        message = client.messages.create(
+            body= emoji.emojize("Happy May Day! :heart:", use_aliases = True),
+            from_='+Twilio Number',
+            to='+Your Phone Number'
+        )
+
+    elif month  == 6: 
+        message = client.messages.create(
+            body= emoji.emojize("Happy June! :sun:", use_aliases = True),
+            from_='',
+            to=''
+        )
+
+    elif month  == 7:
+        message = client.messages.create(
+            body= emoji.emojize("Happy July! It's almost my birthday :blush:", use_aliases = True),
+            from_='',
+            to=''
+        )
+
+    elif month  == 8: 
+        message = client.messages.create(
+            body= emoji.emojize("Happy August! Almost school time :sad: ", use_aliases = True),
+            from_='',
+            to=''
+        )
+
+    elif month  == 9: 
+        message = client.messages.create(
+            body= emoji.emojize("Happy September! Time to hit the books :book: ", use_aliases = True),
+            from_='',
+            to=''
+        )
+
+    elif month  == 10: 
+        message = client.messages.create(
+            body= emoji.emojize("Happy October! Have a spooky time :pumpkin: ", use_aliases = True),
+            from_='',
+            to=''
+        )
+
+    elif month  == 11: 
+        message = client.messages.create(
+            body= emoji.emojize("Happy November! Have a great thanksgiving, I'm thankful for you :turkey: ", use_aliases = True),
+            from_='',
+            to=''
+        )
+
+    elif month  == 12: 
+        message = client.messages.create(
+            body= emoji.emojize("Happy December! Merry Christmas :Santa: ", use_aliases = True),
+            from_='',
+            to=''
+        )
+
+if __name__ == "__main__": 
+    main()
+
+
